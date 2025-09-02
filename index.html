@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrim - Web Developer Portfolio</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(rgb(61, 14, 105), rgb(12, 12, 88), rgb(95, 10, 95));
+        }
+        nav{
+            background-color: rgba(131, 27, 216, 0.432);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: wheat;
+        }
+        nav ul li a:hover{
+            color: black;
+            font-size: 1.05rem;
+        }
+        main hr{
+            border: 0;
+            background: #310868;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 95px 0;
+        }
+        .firstSection > div{
+            width: 30%;
+        }
+        .leftSection{
+            font-size: 3rem;
+        }
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+        .leftSection .btn{
+            padding: 12px;
+            background: rgb(6, 6, 80);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .rightSection img{
+            width: 80%;
+            transition: transform 0.3s ease;
+        }
+        .rightSection img:hover {
+            transform: scale(1.1);
+        }
+        .purple{
+            color: blueviolet;
+        }
+        .text-grey{
+            color: grey;
+        }
+        #element{
+            background: linear-gradient(to right, pink, red , blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Second Section */
+.secondSection {
+  max-width: 90vw;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.secondSection h1 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.work-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.work-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.work-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+.work-card img {
+  width: 60px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.work-card h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: violet;
+}
+
+.work-card ul {
+  padding-left: 20px;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.work-card ul li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+        footer{
+            background-color: rgb(61, 3, 61);
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer > div{
+            width: 223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+        .footer-fourth a{
+            text-decoration: none;
+            color: wheat;
+        }
+        .footer-fourth a:hover{
+            color: black;
+            font-size: 1.05rem;
+        }
+        .leftSection .buttons a{
+            text-decoration: none;
+            color: white;
+        }
+        .leftSection .buttons a:hover{
+            color: rgb(121, 31, 206);
+            text-decoration: none;
+            color: rgb(158, 62, 202);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Agrim's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hii, My name is <span class="purple">Agrim</span>
+                <div>and I am a</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn"><a href="https://github.com/Agrim027">Visit GitHub</a></button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="Developer.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <!-- Second Section -->
+<section class="secondSection">
+  <span class="text-grey" style="display:block;text-align:center;margin-bottom:10px;">What I have done so far</span>
+  <h1>Work Experience</h1>
+
+  <div class="work-container">
+    <div class="work-card">
+      <img src="html.png" alt="">
+      <h2>HTML Developer <br> (2023-2024)</h2>
+      <ul>
+        <li>Designed and developed responsive web pages using <code>HTML5</code>, <code>CSS3</code>, and <code>JavaScript</code>.</li>
+        <li>Ensured cross-browser compatibility and optimized performance.</li>
+        <li>Collaborated with designers for user-friendly interfaces.</li>
+        <li>Implemented SEO-friendly and accessible HTML structures.</li>
+      </ul>
+    </div>
+
+    <div class="work-card">
+      <img src="java.png" alt="">
+      <h2>Java Developer <br> (2023-2024)</h2>
+      <ul>
+        <li>Developed and maintained applications using <code>Java</code> and OOP principles.</li>
+        <li>Worked with Java Collections, Exception Handling, and Multithreading.</li>
+        <li>Optimized code with efficient algorithms and data structures.</li>
+        <li>Integrated Java code with databases and UI interfaces.</li>
+      </ul>
+    </div>
+
+    <div class="work-card">
+      <img src="Talentrove.png" alt="">
+      <h2>Talentrove Member <br> (2023-2027)</h2>
+      <ul>
+        <li>Actively participated in the <strong>Talentrove Club</strong> in college.</li>
+        <li>Organized cultural, technical, and literary events.</li>
+        <li>Enhanced student engagement and creativity.</li>
+        <li>Developed leadership and communication skills.</li>
+      </ul>
+    </div>
+
+    <div class="work-card">
+      <img src="software.png" alt="">
+      <h2>Software Developer</h2>
+        <h2>(2027 - ∞)</h2>
+      <ul>
+        <li>Designed, developed, and maintained software applications.</li>
+        <li>Optimized algorithms and ensured high performance.</li>
+        <li>Built scalable and user-friendly solutions with teams.</li>
+        <li>Integrated databases, APIs, and UI with backend systems.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h2>Agrim's Portfolio as Developer</h2>
+            </div>
+            <div class="footer-second">
+            </div>
+            <div class="footer-third">
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/gupta-agrim/">LinkedIn</a> </li>
+                    <li><a href="https://github.com/Agrim027">GitHub</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="">WhatsApp</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            &copy; agrimg8@gmail.com  |  All rights reserved
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Java Developer', 'Software Engineer', 'App Developer'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>
